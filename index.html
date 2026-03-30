@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 4: Getting to Know You | English Day - SDNP Tunas Iblam</title>
+    <title>UNIT 4: Getting to Know You | English Day - SDNP Tunas Iblam</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -755,30 +755,18 @@
            ============================================ */
         .timer-container {
             position: fixed;
-            top: 20px;
-            right: 20px;
-            background: rgba(32, 34, 37, 0.9);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: var(--space-md) var(--space-lg);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            top: 10px;
+            right: 10px;
+            background: var(--bg-darker);
+            border: 1px solid var(--yellow);
+            border-radius: 12px;
+            padding: 8px 15px;
             z-index: 1000;
-        }
-
-        .timer-display {
-            font-family: 'Fredoka', sans-serif;
-            font-size: var(--font-2xl);
-            color: var(--yellow);
             text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
-
-        .timer-label {
-            font-size: var(--font-sm);
-            text-align: center;
-            color: var(--text-muted);
-            font-family: 'Fredoka', sans-serif;
-        }
+        .timer-display { font-family: 'Fredoka', sans-serif; font-size: 1.5rem; color: var(--yellow); }
+        .timer-label { font-size: 0.7rem; color: var(--text-muted); }
 
         /* ============================================
            SENTENCE BUILDER
@@ -934,16 +922,17 @@
 
     <!-- Timer -->
     <div class="timer-container">
-        <div class="timer-display" id="timer">10:00</div>
+        <div class="timer-display" id="timer">30:00</div>
         <div class="timer-label">Session Timer</div>
     </div>
 
     <div class="container">
         <!-- Header -->
         <header class="header">
-            <div class="school-name">SDNP TUNAS IBLAM · ENGLISH DAY</div>
+            <div class="logo-icon">  <img src="data:image/jpeg;base64,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"> </div>
+            <div class="school-name">SDNP TUNAS IBLAM · ENGLISH DAY 2025/2026</div>
             <h1 class="main-title">GETTING TO KNOW YOU</h1>
-            <div class="week-badge">WEEK 4 💫</div>
+            <div class="week-badge">UNIT 4 💫</div>
         </header>
 
         <!-- Navigation -->
@@ -965,35 +954,7 @@
         <!-- SECTION 1: CONNECT & REVIEW -->
         <section id="connect" class="content-section active">
             <div class="card">
-                <h2 class="card-title"><span>🔄</span> Week 3 Review</h2>
-                <p class="card-subtitle">Quick share time! Think about your habits from last week.</p>
-                
-                <div class="sentence-builder">
-                    <p style="margin-bottom: var(--space-md); font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: var(--font-lg);">Share your answer:</p>
-                    <div class="sentence-parts" id="reviewSentence">
-                        <span>"One habit I practiced was</span>
-                        <div class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)" data-accept="habit">...</div>
-                        <span>. I did it</span>
-                        <div class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)" data-accept="frequency">...</div>
-                        <span>!"</span>
-                    </div>
-                    <div class="word-bank">
-                        <div class="draggable-word" draggable="true" ondragstart="drag(event)" data-type="habit">reading</div>
-                        <div class="draggable-word" draggable="true" ondragstart="drag(event)" data-type="habit">drawing</div>
-                        <div class="draggable-word" draggable="true" ondragstart="drag(event)" data-type="habit">exercising</div>
-                        <div class="draggable-word" draggable="true" ondragstart="drag(event)" data-type="frequency">every day</div>
-                        <div class="draggable-word" draggable="true" ondragstart="drag(event)" data-type="frequency">twice a week</div>
-                        <div class="draggable-word" draggable="true" ondragstart="drag(event)" data-type="frequency">sometimes</div>
-                    </div>
-                </div>
-
-                <button class="activity-btn" onclick="speakText('What was one habit you practiced this week? How often did you do it?')">
-                    🔊 Read Aloud
-                </button>
-            </div>
-
-            <div class="card">
-                <h2 class="card-title"><span>🎭</span> Theme Reveal: Getting to Know You!</h2>
+                <h2 class="card-title"><span>🎭</span> Theme Reveal: "Getting to Know You"</h2>
                 <p class="card-subtitle">
                     How do we make new friends? What questions help us learn about someone?<br><br>
                     This week, we become <strong style="color: var(--yellow);">Talent Detectives</strong> and <strong style="color: var(--pink);">Interviewers</strong>! 
@@ -1040,37 +1001,37 @@
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">👍/👎</div>
                         <div class="vocab-word">can / cannot</div>
-                        <div class="vocab-meaning">🇮🇩 bisa / tidak bisa<br><em style="color: var(--yellow);">Thumbs up / Thumbs down</em></div>
+                        <div class="vocab-meaning">🇮🇩 bisa / tidak bisa<br><em style="color: var(--yellow);">💬 "I can swim very fast!" / "I can't fly like a bird."</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">👨‍🍳</div>
                         <div class="vocab-word">cook</div>
-                        <div class="vocab-meaning">🇮🇩 memasak<br><em style="color: var(--yellow);">Pretend to stir</em></div>
+                        <div class="vocab-meaning">🇮🇩 memasak<br><em style="color: var(--yellow);">💬 "My mom can cook delicious noodles."</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">🎨</div>
                         <div class="vocab-word">draw</div>
-                        <div class="vocab-meaning">🇮🇩 menggambar<br><em style="color: var(--yellow);">Pretend to draw</em></div>
+                        <div class="vocab-meaning">🇮🇩 menggambar<br><em style="color: var(--yellow);">💬 "Can you draw a cat?"</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">🎤</div>
                         <div class="vocab-word">sing</div>
-                        <div class="vocab-meaning">🇮🇩 menyanyi<br><em style="color: var(--yellow);">Pretend to sing</em></div>
+                        <div class="vocab-meaning">🇮🇩 menyanyi<br><em style="color: var(--yellow);">💬 "She can sing beautifully."</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">💃</div>
                         <div class="vocab-word">dance</div>
-                        <div class="vocab-meaning">🇮🇩 menari<br><em style="color: var(--yellow);">Pretend to dance</em></div>
+                        <div class="vocab-meaning">🇮🇩 menari<br><em style="color: var(--yellow);">💬 "We can dance at the party."</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">🏊</div>
                         <div class="vocab-word">swim</div>
-                        <div class="vocab-meaning">🇮🇩 berenang<br><em style="color: var(--yellow);">Swimming motion</em></div>
+                        <div class="vocab-meaning">🇮🇩 berenang<br><em style="color: var(--yellow);">💬 "We can dance at the party."</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">🎮</div>
                         <div class="vocab-word">play</div>
-                        <div class="vocab-meaning">🇮🇩 bermain<br><em style="color: var(--yellow);">Game controller motion</em></div>
+                        <div class="vocab-meaning">🇮🇩 bermain<br><em style="color: var(--yellow);">💬 "Can you play the guitar?"</em></div>
                     </div>
                 </div>
 
@@ -1079,32 +1040,32 @@
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">👍/👎</div>
                         <div class="vocab-word">can / cannot</div>
-                        <div class="vocab-meaning">🇮🇩 bisa / tidak bisa</div>
+                        <div class="vocab-meaning">🇮🇩 bisa / tidak bisa<br><em style="color: var(--yellow);">💬 "I can swim very fast!" / "I can't fly like a bird."</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">💡</div>
                         <div class="vocab-word">experience</div>
-                        <div class="vocab-meaning">🇮🇩 pengalaman<br><em style="color: var(--yellow);">Light bulb moment (tap head)</em></div>
+                        <div class="vocab-meaning">🇮🇩 pengalaman<br><em style="color: var(--yellow);">💬 "I had an amazing experience on holiday."</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">🤔</div>
                         <div class="vocab-word">ever</div>
-                        <div class="vocab-meaning">🇮🇩 pernah<br><em style="color: var(--yellow);">Questioning face (finger on chin)</em></div>
+                        <div class="vocab-meaning">🇮🇩 pernah<br><em style="color: var(--yellow);">💬 "I had the most fun ever!"</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">✈️</div>
                         <div class="vocab-word">visited</div>
-                        <div class="vocab-meaning">🇮🇩 mengunjungi<br><em style="color: var(--yellow);">Travel gesture</em></div>
+                        <div class="vocab-meaning">🇮🇩 mengunjungi<br><em style="color: var(--yellow);">💬 "I want to travel to Mars."</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">💪</div>
                         <div class="vocab-word">attempted / tried</div>
-                        <div class="vocab-meaning">🇮🇩 mencoba<br><em style="color: var(--yellow);">Try gesture</em></div>
+                        <div class="vocab-meaning">🇮🇩 mencoba<br><em style="color: var(--yellow);">💬 "I tried cooking fried rice yesterday"</em></div>
                     </div>
                     <div class="vocab-card" onclick="flipCard(this)">
                         <div class="vocab-gesture">❓</div>
                         <div class="vocab-word">have you ever</div>
-                        <div class="vocab-meaning">🇮🇩 apakah kamu pernah<br><em style="color: var(--yellow);">Question gesture</em></div>
+                        <div class="vocab-meaning">🇮🇩 apakah kamu pernah<br><em style="color: var(--yellow);">💬 "Have you ever been to SIngapore?"</em></div>
                     </div>
                 </div>
 
@@ -1125,8 +1086,9 @@
             <div id="practice-lower" class="card">
                 <h2 class="card-title"><span>🕵️</span> Find Someone Who... BINGO!</h2>
                 <p class="card-subtitle">
-                    Walk around and ask: <strong style="color: var(--yellow);">"Can you ______?"</strong><br>
-                    If they say YES, click the box and write their name! First to complete a row wins! 🏆
+                    Ayo berpartisipasi! Tanyakan satu-satu teman kelasmu: <strong style="color: var(--yellow);">"Can you ______?"</strong><br>
+                    <br>
+                   Jika mereka mengatakan "Yes, I can", klik box-nya dan tulis nama mereka. Jika sudah berhasil mengumpulkan jawaban "Yes..." dalam sebaris, you win! 🏆
                 </p>
 
                 <div class="bingo-grid" id="bingoGrid">
@@ -1194,7 +1156,7 @@
             <div id="practice-upper" class="card" style="display: none;">
                 <h2 class="card-title"><span>🎙️</span> Experience Interview Stations</h2>
                 <p class="card-subtitle">
-                    Rotate through 4 stations with your partner. Ask the questions and follow up!
+                    Setiap nomor-nomor di bawah ini merupakan pos pertanyaan. Dengan pasanganmu,tanyakan pertanyaan-pertanyaan berikut ini secara bergantian!
                 </p>
 
                 <div class="station-container">
@@ -1203,7 +1165,7 @@
                         <div class="station-question">"Have you ever visited a beach?"</div>
                         <div class="follow-up-box">
                             <div class="follow-up-title">If YES →</div>
-                            <p>"What happened? When? Where?"</p>
+                            <p>"Where was it?"</p>
                             <div class="follow-up-title" style="margin-top: var(--space-sm);">If NO →</div>
                             <p>"Would you like to try?"</p>
                         </div>
@@ -1214,7 +1176,7 @@
                         <div class="station-question">"Have you ever tried a new sport?"</div>
                         <div class="follow-up-box">
                             <div class="follow-up-title">If YES →</div>
-                            <p>"What sport? How was it?"</p>
+                            <p>"What sport was it?"</p>
                             <div class="follow-up-title" style="margin-top: var(--space-sm);">If NO →</div>
                             <p>"Would you like to try?"</p>
                         </div>
@@ -1225,7 +1187,7 @@
                         <div class="station-question">"Have you ever performed on stage?"</div>
                         <div class="follow-up-box">
                             <div class="follow-up-title">If YES →</div>
-                            <p>"What did you perform? When?"</p>
+                            <p>"What did you perform?"</p>
                             <div class="follow-up-title" style="margin-top: var(--space-sm);">If NO →</div>
                             <p>"Would you like to try?"</p>
                         </div>
@@ -1233,10 +1195,10 @@
 
                     <div class="station-card">
                         <div class="station-number">4</div>
-                        <div class="station-question">"Have you ever made something by yourself?"</div>
+                        <div class="station-question">"Have you ever cooked something?"</div>
                         <div class="follow-up-box">
                             <div class="follow-up-title">If YES →</div>
-                            <p>"What did you make? How?"</p>
+                            <p>"What did you cook?"</p>
                             <div class="follow-up-title" style="margin-top: var(--space-sm);">If NO →</div>
                             <p>"Would you like to try?"</p>
                         </div>
@@ -1249,39 +1211,26 @@
                         <div style="margin-bottom: var(--space-md);">
                             <strong style="color: var(--yellow);">Station 1 - Beach:</strong><br>
                             Name: <input type="text" class="collage-input" style="width: 200px; display: inline; margin: var(--space-xs) 0;" placeholder="Classmate name"><br>
-                            Answer: <input type="text" class="collage-input" placeholder="What they said...">
+                            Answer: <input type="text" class="collage-input" placeholder="What he/she said...">
                         </div>
                         <div style="margin-bottom: var(--space-md);">
                             <strong style="color: var(--yellow);">Station 2 - Sport:</strong><br>
                             Name: <input type="text" class="collage-input" style="width: 200px; display: inline; margin: var(--space-xs) 0;" placeholder="Classmate name"><br>
-                            Answer: <input type="text" class="collage-input" placeholder="What they said...">
+                            Answer: <input type="text" class="collage-input" placeholder="What he/she said...">
                         </div>
                         <div style="margin-bottom: var(--space-md);">
                             <strong style="color: var(--yellow);">Station 3 - Stage:</strong><br>
                             Name: <input type="text" class="collage-input" style="width: 200px; display: inline; margin: var(--space-xs) 0;" placeholder="Classmate name"><br>
-                            Answer: <input type="text" class="collage-input" placeholder="What they said...">
+                            Answer: <input type="text" class="collage-input" placeholder="What he/she said...">
                         </div>
                         <div style="margin-bottom: var(--space-md);">
-                            <strong style="color: var(--yellow);">Station 4 - Made Something:</strong><br>
+                            <strong style="color: var(--yellow);">Station 4 - Cook Something:</strong><br>
                             Name: <input type="text" class="collage-input" style="width: 200px; display: inline; margin: var(--space-xs) 0;" placeholder="Classmate name"><br>
-                            Answer: <input type="text" class="collage-input" placeholder="What they said...">
+                            Answer: <input type="text" class="collage-input" placeholder="What he/she said...">
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Group Activity -->
-            <div class="card" style="margin-top: var(--space-lg);">
-                <h2 class="card-title"><span>👥</span> Group Activity</h2>
-                
-                <div id="group-lower-content">
-                    <p class="card-subtitle"><strong style="color: var(--yellow);">Group Talent Share:</strong> In groups of 4, complete this sentence:</p>
-                    <div style="background: var(--bg-dark); padding: var(--space-lg); border-radius: 16px; font-size: var(--font-lg); text-align: center; margin: var(--space-lg) 0;">
-                        "In my group, <input type="text" placeholder="name" style="background: var(--bg-darker); border: 2px solid var(--border-color); padding: 8px 12px; border-radius: 8px; color: white; width: 120px; font-family: 'Nunito', sans-serif;"> can <input type="text" placeholder="talent" style="background: var(--bg-darker); border: 2px solid var(--border-color); padding: 8px 12px; border-radius: 8px; color: white; width: 120px; font-family: 'Nunito', sans-serif;">, 
-                        <input type="text" placeholder="name" style="background: var(--bg-darker); border: 2px solid var(--border-color); padding: 8px 12px; border-radius: 8px; color: white; width: 120px; font-family: 'Nunito', sans-serif;"> can <input type="text" placeholder="talent" style="background: var(--bg-darker); border: 2px solid var(--border-color); padding: 8px 12px; border-radius: 8px; color: white; width: 120px; font-family: 'Nunito', sans-serif;">..."
-                    </div>
-                    <p style="text-align: center; font-size: var(--font-lg);">Choose 1 talent to showcase for the class! 🎭</p>
-                </div>
 
                 <div id="group-upper-content" style="display: none;">
                     <p class="card-subtitle"><strong style="color: var(--pink);">Experience Collage:</strong> Combine your findings into a "Class Experience Collage"</p>
@@ -1315,24 +1264,24 @@
                 </div>
 
                 <div id="share-lower-content">
-                    <p class="card-subtitle">Present your group's talents:</p>
+                    <p class="card-subtitle">Tell about your friends' talents!</p>
                     <div class="glass-card" style="margin: var(--space-lg) 0;">
                         <p style="font-size: var(--font-xl); text-align: center; font-family: 'Fredoka', sans-serif; font-weight: 600; margin-bottom: var(--space-md);">
-                            "In our group, ______ can ______. ______ can ______."
+                            "In our class, ______ can ______. ______ can ______."
                         </p>
                         <p style="text-align: center; font-size: var(--font-lg); color: var(--text-secondary);">
-                            If time allows, quickly demonstrate! (Show a drawing, sing one line, etc.)<br>
-                            Class gives encouraging applause! 👏
+                            <br>
+                            GIve applause to your friends! 👏
                         </p>
                     </div>
                 </div>
 
                 <div id="share-upper-content" style="display: none;">
-                    <p class="card-subtitle">Present your Experience Collage:</p>
+                    <p class="card-subtitle">Present your experiences:</p>
                     <div class="glass-card" style="margin: var(--space-lg) 0;">
                         <p style="font-size: var(--font-xl); text-align: center; font-family: 'Fredoka', sans-serif; font-weight: 600; margin-bottom: var(--space-md);">
-                            "We found out that four people have visited a beach.<br>
-                            One person has performed on stage!"
+                            "I found out that (partner's name) has (experience, for example: visited a beach).<br>
+                            He/she also has (experience)!"
                         </p>
                         <p style="text-align: center; font-size: var(--font-lg); color: var(--text-secondary); margin-bottom: var(--space-md);">
                             <strong style="color: var(--yellow);">Challenge Round:</strong> Other groups ask follow-up questions!
